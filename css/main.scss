@@ -3,13 +3,25 @@
 ---
 @charset "utf-8";
 
+@font-face{
+font-family: 'Learning Curve';
+  src: url('../fonts/LearningCurve_OT-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/LearningCurve_OT-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/LearningCurve_OT-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/LearningCurve_OT-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/LearningCurve_OT-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: Georgia,Times,"Times New Roman",serif;
+$base-font-size:   62.5%;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+
+$display-font-family: "Learning Curve","Brush Script MT",cursive;
 
 $spacing-unit:     30px;
 
