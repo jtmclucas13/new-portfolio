@@ -1,0 +1,79 @@
+- src: images/dream-3.jpg
+  id: 1
+  title: Mercury Fur
+  playwright: Philip Ridley
+  venue: Frear Ensemble Theater
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+
+- src: images/dream-3.jpg
+  id: 2
+  title: Titus Andronicus
+  playwright: William Shakespeare
+  venue: Pearson-Hall Theater
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: Elliott
+      position: Joshua McLucas
+    - title: Elliott
+      position: Joshua McLucas
+    - title: Elliott
+      position: Joshua McLucas
+
+- src: images/dream-3.jpg
+  id: 3
+  title: The Horizon Line
+  playwright: Architectonic Laboratories
+  venue: Paces Cafe
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: Some Guy
+      position: Joshua McLucas
+    - title: Some Guy
+      position: Joshua McLucas
+    - title: Some Guy
+      position: Joshua McLucas
+
+- src: images/dream-3.jpg
+  id: 4
+  title: The Gun(s) Show
+  playwright: The 007 Group
+  venue: Frear Ensemble Theater
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: Some Guy
+      position: Joshua McLucas
+    - title: Some Guy
+      position: Joshua McLucas
+    - title: Some Guy
+      position: Joshua McLucas
+
+- src: images/dream-3.jpg
+  id: 5
+  title: The Name
+  playwright: Jon Fosse
+  venue: Frear Ensemble Theater
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: Some Guy
+      position: Joshua McLucas
+    - title: Some Guy
+      position: Joshua McLucas
+    - title: Some Guy
+      position: Joshua McLucas

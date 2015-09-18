@@ -1,0 +1,57 @@
+{% if include.type == "acting" %}
+<ul class="projects clearfix">
+    {% for item in site.data.actingProjects %}
+      <li id="{{item.id}}_actingSelect"><img src="{{ item.mainImage }}" alt=""><p>{{ item.title }}</p></li>
+    {% endfor %}
+</ul>
+
+  {% for item in site.data.actingProjects %}
+	<div id="{{item.id}}_actingDisplay" class="fullProject clearfix" >
+    <ul class="slideshow">
+      {% for url in item.images %}
+        {% if forloop.index == 1 %}
+          <li class="activeSlide"><img src="{{ url.src }}" alt=""></li>
+        {% else %}
+          <li><img src="{{ url.src }}" alt=""></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    	<div class="innerText">
+          <h4>{{ item.title }}</h4>
+          <h5>By {{ item.playwright }}</h5>
+          <h5>Directed by {{ item.director }}</h5>
+          {% for quotes in item.quotes %}
+          	<blockquote><p>"{{ quotes.quote }}"</p><cite>- {{ quotes.reviewer }}</cite></blockquote>
+          {% endfor %}
+          {% for person in item.people %}
+          	<p><strong>{{ person.title }}:</strong> {{ person.position }}</p>
+          {% endfor %}
+        </div>
+    </div>
+  {% endfor %}
+{% endif %}
+
+{% if include.type == "directing" %}
+<ul class="projects clearfix">
+    {% for item in site.data.directingProjects %}
+      <li id="{{item.id}}_directingSelect"><img src="{{ item.src }}" alt=""><p>{{ item.title }}</p></li>
+    {% endfor %}
+</ul>
+
+  {% for item in site.data.directingProjects %}
+  <div id="{{item.id}}_directingDisplay" class="fullProject clearfix" >
+    <img src="{{ item.src }}" alt="">
+      <div class="innerText">
+          <h4>{{ item.title }}</h4>
+          <h5>By {{ item.playwright }}</h5>
+          <h5>Directed by {{ item.director }}</h5>
+          {% for quotes in item.quotes %}
+            <blockquote><p>"{{ quotes.quote }}"</p><cite>- {{ quotes.reviewer }}</cite></blockquote>
+          {% endfor %}
+          {% for person in item.people %}
+            <p><strong>{{ person.title }}:</strong> {{ person.position }}</p>
+          {% endfor %}
+        </div>
+    </div>
+  {% endfor %}
+{% endif %}

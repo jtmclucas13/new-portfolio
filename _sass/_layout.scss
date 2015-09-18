@@ -1,236 +1,194 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+li{
+    list-style-type: none;
+}
 
-    // Positioning context for the mobile navigation icon
+/**
+* Main Homepage
+*/
+.left-section, .right-section{
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    -webkit-transition: width 0.8s ease;
+    transition: width 0.8s ease;
+}
+#topImageLeft, #topImageRight{
+    height: 100%;
     position: relative;
 }
-
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
+#bottomImageLeft, #bottomImageRight{
+    display: none;
+}
+.grayscale{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.overlay{
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.info-default{
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    text-align: center;
+}
+.info-default h1, .info-default h2{
+    width: 100%;
+    span{
+        color: $brand-color;
     }
 }
-
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
+.info-default p{
+    width: 40%;
+    margin: 0% 30%;
+    font-size: $base-font-size + 0.2em;
+}
+.sectionDetail{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 17%;
+    h3{
+        color: #fff;
+        font-size: $base-font-size + 4em;
+        text-align: center;
+        width: 100%;
     }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
+}
+.under-section{
+    display: none;
+    width: 100%;
+}
+.leftBack, .rightBack{
+    width: 5%;
+    margin: 0% 47.25%;
+    cursor: hand;
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    padding: 2%;
+    background: $brand-color;
+    nav ul li{
+        width: 33%;
+        text-align: center;
+        float: left;
+        display: block;
+        a{
+            color: #fff;
+            font-family: $display-font-family;
+            font-size: $base-font-size + 2em;
         }
     }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
+}
+#acting, #directing{
+    width: 95%;
+    margin: 1% 2.5% 0%;
+}
+h4{
+    font-size: $base-font-size + 4em;
+}
+h5{
+    font-size: $base-font-size + 2em;
+}
+blockquote{
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+    margin: 5% 0%;
+    color: $brand-color;
+    p{
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        font-size: $base-font-size;
+    }
+    cite{
+        width: 100%;
+        margin: 0px;
         text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
+        display: block;
+        font-size: $base-font-size - 0.2em;
     }
 }
 
-
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
+.projects li{
+    width: 20%;
+    margin: 2.5%;
     float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+    cursor: hand;
+    cursor: pointer;
+    p{
+        text-align: center;
+        color: $brand-color;
     }
 }
 
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+.fullProject{
+    display: none;
+    width: 100%;
+    h4, h5{
+        width: 100%;
+        margin-bottom: 0%;
+        line-height: 1em;
+    }
+    h4{
+        color: $brand-color;
+    }
+    img{
+        width: 60%;
+        margin: 1% 2.5%;
+        float: left;
+    }
+    .innerText{
+        width: 30%;
+        margin: 1% 2.5%;
+        float: left;
     }
 }
 
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
+.fullProject:first-of-type{
     display: block;
-    font-size: 24px;
 }
 
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
+.fullProject .slideshow li{
+    display: none;
 }
 
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+.activeSlide{
+    display: block !important;
 }
 
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+footer{
+    background: $brand-color;
+    width: 100%;
+    padding: 2% 0%;
+    color: #fff;
+    font-family: $display-font-family;
+    p{
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0px;
     }
 }

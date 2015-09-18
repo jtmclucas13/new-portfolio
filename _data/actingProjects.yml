@@ -1,0 +1,163 @@
+- mainImage: images/dream-3.jpg
+  images: 
+    - src: images/dream-3.jpg
+    - src: images/left-main.jpg
+    - src: images/old_cooke.png
+  id: 1
+  title: Mercury Fur
+  playwright: Philip Ridley
+  director: Josh Hitchens
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: Elliott
+      position: Joshua McLucas
+    - title: Elliott
+      position: Joshua McLucas
+    - title: Elliott
+      position: Joshua McLucas
+
+- mainImage: images/dream-3.jpg
+  id: 2
+  title: Dublin By Lamplight
+  playwright: ???
+  director: Alex Torra
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: Elliott
+      position: Joshua McLucas
+    - title: Elliott
+      position: Joshua McLucas
+    - title: Elliott
+      position: Joshua McLucas
+
+- mainImage: images/dream-3.jpg
+  id: 3
+  title: Earthquakes In London
+  playwright: Mike Bartlett
+  director: Patrick Ross
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: Some Guy
+      position: Joshua McLucas
+    - title: Some Guy
+      position: Joshua McLucas
+    - title: Some Guy
+      position: Joshua McLucas
+
+- mainImage: images/dream-3.jpg
+  id: 4
+  title: Peter Pan
+  playwright: J. M. Barrie
+  director: Katie Goldman
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+
+- mainImage: images/dream-3.jpg
+  id: 5
+  title: A Dream Play
+  playwright: August Strindberg
+  director: Jake Murray
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+
+- mainImage: images/dream-3.jpg
+  id: 6
+  title: Macbeth
+  playwright: William Shakespeare
+  director: Patrick Ross
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+
+- mainImage: images/dream-3.jpg
+  id: 7
+  title: Unstuck
+  playwright: Unstuck Theater Company
+  director: Meryl Sands
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+
+- mainImage: images/dream-3.jpg
+  id: 8
+  title: Much Ado About Nothing
+  playwright: William Shakespeare
+  director: Chris Klaniecki
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+
+- mainImage: images/dream-3.jpg
+  id: 9
+  title: Ivona, Princess of Burgundia
+  playwright: Witold Gombrowicz
+  director: K. Elizabeth Stevens
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+
+- mainImage: images/dream-3.jpg
+  id: 10
+  title: A Midsummer Night's Dream
+  playwright: William Shakespeare
+  director: Holly Kinnamont
+  quotes:
+    - quote: "This play rocks!"
+      reviewer: Tom A. Reviewer
+  people:
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas
+    - title: The Poet
+      position: Joshua McLucas

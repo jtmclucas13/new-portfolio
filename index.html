@@ -2,22 +2,48 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="home clearfix">
+  <div class="left-section">
+    <img id="topImageLeft" class="grayscale" src="images/dream-3.jpg" alt="">
+    <span class="overlay"></span>
+    <div class="sectionDetail">
+      <h3>Actor, Director, Creator: Pursuing The Bold</h3>
+      <img class="leftBack" src="images/right_arrow_white.png" alt="">
+    </div>
+    <div class="under-section">
+      <div class="replace-header"></div>
+      <header>
+        <nav>
+          <ul class="clearfix">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#acting">Acting</a></li>
+            <li><a href="#directing">Directing</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="actingSection">
+        <h4 id="acting">Acting</h4>
+        {% include projects.html type="acting" %}
+      </section>
+      <section id="directingSection">
+        <h4 id="directing">Directing</h4>
+        {% include projects.html type="directing" %}
+      </section>
+      <footer>
+        <p>Website by Joshua McLucas</p>
+      </footer>
+    </div>
+  </div>
+  <div class="right-section">
+    <img id="topImageRight" class="grayscale" src="images/old_cooke.png" alt="">
+    <span class="overlay"></span>
+    <div class="under-section">
+      <img class="rightBack" src="images/left_arrow_white.png" alt="">
+    </div>
+  </div>
+  <div class="info-default">
+    <h1 class="page-heading">Joshua McLucas</h1>
+    <h2>Theater <span>&amp;</span> Web</h2>
+  </div>  
 
 </div>

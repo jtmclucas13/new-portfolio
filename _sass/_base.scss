@@ -15,7 +15,7 @@ dl, dd, ol, ul, figure {
  */
 body {
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-size: 62.5%;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
@@ -23,9 +23,18 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-/* delete this */
-h1{
+h1, h2, h3, h4, h5, h6{
     font-family: $display-font-family;
+}
+
+h1{
+    font-size: $base-font-size + 10em;
+}
+h2{
+    font-size: $base-font-size + 6em;
+}
+p{
+    font-size: $base-font-size;
 }
 
 
@@ -34,8 +43,7 @@ h1{
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+p, blockquote, pre, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
@@ -65,20 +73,6 @@ figcaption {
 
 
 
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
 
 
 /**
@@ -96,15 +90,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
 }
 
 
@@ -165,7 +150,6 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    @extend %clearfix;
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
@@ -175,19 +159,6 @@ pre {
     }
 }
 
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
 
 
 
